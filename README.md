@@ -45,14 +45,14 @@ button1という名前のボタンを追加してクリック処理も追加し�
 
 ![screenshot 105](https://user-images.githubusercontent.com/45355489/49055957-eb091280-f23c-11e8-9bc1-06f908b752b0.png)
 
-Form1.cs
+##### Form1.cs
 
 ![screenshot 106](https://user-images.githubusercontent.com/45355489/49056026-2b689080-f23d-11e8-8476-516ef874d5a4.png)
 
 ボタンが押された時の処理はForm1.csに追加されます。
 - line.20    : private void button1_Click(object sender, EventArgs e)
 
-From1.Designer.cs
+##### From1.Designer.cs
 
 ![screenshot 107](https://user-images.githubusercontent.com/45355489/49056141-b9447b80-f23d-11e8-9c69-841d14fa5328.png)
 
@@ -61,7 +61,7 @@ From1.Designer.cs
 - line49     : this.Controls.Add(this.button1);
 - line58     : private System.Windows.Forms.Button button1;
 
-this.Controls.Add()フォームにオブジェクトを追加します。
+this.Controls.Add()でフォームにオブジェクトを追加します。
 フィールド変数を定義し、Form1.csから利用できるようにします。
 
 
