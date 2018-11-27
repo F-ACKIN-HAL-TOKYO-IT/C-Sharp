@@ -42,6 +42,7 @@ InitializeComponent()本体が書かれています。
 
 #### ボタンを追加するとどうなるのか
 button1という名前のボタンを追加してクリック処理も追加します。
+
 ![screenshot 105](https://user-images.githubusercontent.com/45355489/49055957-eb091280-f23c-11e8-9bc1-06f908b752b0.png)
 
 Form1.cs
