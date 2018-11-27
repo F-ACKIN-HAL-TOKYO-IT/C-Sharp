@@ -20,6 +20,7 @@
 重要なのは
 - line.7     : namespace WindowsFormsApp4
 - line.19    : Application.Run(new Form1());
+
 このProgramクラスのMainメソッドは同じ名前空間上（WindowsFormsApp4）にいるForm1クラスをインスタンス化し、Application.Run()メソッドに渡します。
 
 ### Form1.cs
@@ -29,6 +30,7 @@
 こちらも同じ名前空間です。
 - line.15    : public Form1()
 - line.17    : InitializeComponent();
+
 Form1クラスのコンストラクタがInitializeComponent()を呼び出しています。
 
 ### From1.Designer.cs
@@ -53,6 +55,7 @@ From1.Designer.cs
 ボタンオブジェクトに対して名前や位置、デザインなどが設定されています。
 - line49     : this.Controls.Add(this.button1);
 - line58     : private System.Windows.Forms.Button button1;
+
 this.Controls.Add()フォームにオブジェクトを追加します。
 フィールド変数を定義し、Form1.csから利用できるようにします。
 
@@ -63,6 +66,7 @@ this.Controls.Add()フォームにオブジェクトを追加します。
 https://github.com/F-ACKIN-HAL-TOKYO-IT/C-Sharp/blob/master/MyInstaller/FormMain.cs
 このサンプルコードは、FormMainクラスのコンストラクタでInitializeComponent()を実行せずに、同コード内にあるMyInitializeComponent()を呼び出しています。
 - line.195   : private void MyInitializeComponent()
+
 この状態ではVisualStudioはデザインをレンダリング出来ないので、デザインを変更したい場合はFromMain.Designer.csというファイルを作成するかForm1をリネームするなりして、そこに張り付ける必要があります。
 さらに、コードの一番下にあるフィールド変数もFromMain.Designer.csに張り付ける必要があります。
 ## 名前の変更
