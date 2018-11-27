@@ -48,12 +48,14 @@ button1という名前のボタンを追加してクリック処理も追加し�
 Form1.cs
 
 ![screenshot 106](https://user-images.githubusercontent.com/45355489/49056026-2b689080-f23d-11e8-8476-516ef874d5a4.png)
+
 ボタンが押された時の処理はForm1.csに追加されます。
 - line.20    : private void button1_Click(object sender, EventArgs e)
 
 From1.Designer.cs
 
 ![screenshot 107](https://user-images.githubusercontent.com/45355489/49056141-b9447b80-f23d-11e8-9c69-841d14fa5328.png)
+
 こちらにもコードが追加されています。
 ボタンオブジェクトに対して名前や位置、デザインなどが設定されています。
 - line49     : this.Controls.Add(this.button1);
